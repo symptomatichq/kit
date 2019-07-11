@@ -19,6 +19,7 @@ func (s server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	s.mux.ServeHTTP(w, r)
 }
 
+// ProbeServer ...
 type ProbeServer struct {
 	logger log.Logger
 	srv    *http.Server
@@ -39,6 +40,7 @@ func (s *ProbeServer) Stop() error {
 	return s.srv.Shutdown(ctx)
 }
 
+// NewServer ...
 func NewServer(port int, logger log.Logger, checkers map[string]Checker) *ProbeServer {
 	mux := http.NewServeMux()
 
