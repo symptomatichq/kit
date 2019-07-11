@@ -22,7 +22,7 @@ func GenerateCSR() (key *rsa.PrivateKey, csrBuf []byte, err error) {
 			Country:            []string{"US"},
 			Province:           []string{"CA"},
 			Locality:           []string{"San Francisco"},
-			Organization:       []string{"Symptomatic"},
+			Organization:       []string{"symptomatichq"},
 			OrganizationalUnit: []string{"."},
 		},
 		SignatureAlgorithm: x509.SHA256WithRSA,

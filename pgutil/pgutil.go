@@ -5,7 +5,7 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/symptomatic/kit/env"
+	"github.com/symptomatichq/kit/env"
 )
 
 // ConfigFromEnv returns the connection configuration based on flags

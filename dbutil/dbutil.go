@@ -11,7 +11,7 @@ import (
 	bindata "github.com/golang-migrate/migrate/source/go_bindata"
 	"github.com/pkg/errors"
 
-	"github.com/symptomatic/kit/pgutil"
+	"github.com/symptomatichq/kit/pgutil"
 )
 
 type dbConfig struct {

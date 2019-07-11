@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/symptomatic/kit/tlsutil"
+	"github.com/symptomatichq/kit/tlsutil"
 )
 
 // Option configures an HTTP Server.

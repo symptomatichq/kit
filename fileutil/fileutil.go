@@ -12,7 +12,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/symptomatic/kit/env"
+	"github.com/symptomatichq/kit/env"
 )
 
 // ReadTarGz read the contents of a .tar.gz file as bytes

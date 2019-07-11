@@ -1,4 +1,4 @@
-module github.com/symptomatic/kit
+module github.com/symptomatichq/kit
 
 go 1.12.7
 
@@ -11,6 +11,7 @@ require (
 	github.com/oklog/ulid v1.3.1
 	github.com/pkg/errors v0.8.1
 	github.com/prometheus/client_golang v1.0.0
+	github.com/stretchr/testify v1.3.0
 	go.opencensus.io v0.22.0
 	google.golang.org/grpc v1.21.1
 )
