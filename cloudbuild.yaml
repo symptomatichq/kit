@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloud-builders/go'
+  args: [ 'get', './...']
+- name: 'gcr.io/cloud-builders/go'
+  args: [ 'test', '-race', '-cover', '-v','./...']
