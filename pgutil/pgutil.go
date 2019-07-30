@@ -12,9 +12,9 @@ import (
 func ConfigFromEnv() *ConnectionOptions {
 	host := flag.String("database.host", env.String("DATABASE_HOST", "localhost"), "PostgreSQL server host")
 	port := flag.Int("database.port", env.Int("DATABASE_PORT", 5432), "PostgreSQL server port")
-	name := flag.String("database.name", env.String("DATABASE_NAME", "olympus"), "PostgreSQL database name")
-	user := flag.String("database.user", env.String("DATABASE_USER", "olympus"), "PostgreSQL server user")
-	password := flag.String("database.password", env.String("DATABASE_PASSWORD", "olympus"), "PostgreSQL server password")
+	name := flag.String("database.name", env.String("DATABASE_NAME", "symptomatic"), "PostgreSQL database name")
+	user := flag.String("database.user", env.String("DATABASE_USER", "symptomatic"), "PostgreSQL server user")
+	password := flag.String("database.password", env.String("DATABASE_PASSWORD", "symptomatic"), "PostgreSQL server password")
 	sslMode := flag.Bool("database.ssl", env.Bool("DATABASE_SSL", false), "PostgreSQL server ssl mode")
 
 	return &ConnectionOptions{
