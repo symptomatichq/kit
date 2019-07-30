@@ -6,6 +6,7 @@ import (
 	"path"
 	"time"
 
+	grpc_prometheus "github.com/grpc-ecosystem/go-grpc-prometheus"
 	"google.golang.org/grpc"
 )
 
@@ -17,4 +18,16 @@ func RequestLogger(ctx context.Context, req interface{}, info *grpc.UnaryServerI
 	method := path.Base(info.FullMethod)
 	log.Printf("%s %s %v %s %s\n", service, method, grpc.Code(err), time.Since(start), grpc.ErrorDesc(err))
 	return h, err
+}
+
+// NewServer ...
+func NewServer() *grpc.Server {
+	gRPCServer := grpc.NewServer(
+		grpc.StreamInterceptor(grpc_prometheus.StreamServerInterceptor),
+		grpc.UnaryInterceptor(grpc_prometheus.UnaryServerInterceptor),
+	)
+
+	grpc_prometheus.Register(gRPCServer)
+
+	return gRPCServer
 }

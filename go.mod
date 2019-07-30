@@ -7,6 +7,7 @@ require (
 	github.com/go-kit/kit v0.8.0
 	github.com/gocraft/dbr v0.0.0-20190626032649-cb950044475e
 	github.com/golang-migrate/migrate v3.5.4+incompatible
+	github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0 // indirect
 	github.com/lib/pq v1.1.1 // indirect
 	github.com/oklog/ulid v1.3.1
 	github.com/pkg/errors v0.8.1
